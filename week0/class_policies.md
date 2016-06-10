@@ -14,8 +14,9 @@ If you are being harassed, notice that someone else is being harassed, or have a
 
 ## Homework Policies
 
-* **All assignments are due at 7am before class begins.**
+* **All assignments are due at midnight before class begins.**
 * **No assignments should include copy and pasted code other than boilerplate set up code for gems that we will use later in the class.**
+* **If you do copy and paste code, include a code comment pointing to the source of the code.**
 * **No assignments should include code lifted or 'borrowed' from someone else without proper citation and licensing.**
 * **Incomplete homework is better than late homework.**
 * **Late homework is better than no homework.**
