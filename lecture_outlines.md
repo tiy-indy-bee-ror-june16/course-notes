@@ -39,9 +39,80 @@
 
 - Note: Classes split back up at this point.
 - Homework review with Chris
+- Responsive design
+	- Media queries
 - Bootstrap
 	- A flipped way of thinking
-	- responsive design
-		- media queries
 	- Grid system
 - Lab prep
+
+## Week Two
+
+### Ruby: Fundamental types - Monday, June 20, 2016
+
+- Lab review
+- `pry`
+- String
+- Integer
+	- Maths
+- Variables
+- Control flow
+	- `if/elsif/else/end`
+	- `case/when/end`
+- Templates and working with HTML
+	- `erb`
+		- embedded ruby
+		- Windows of ruby inside text documents
+		- processing erb
+	- Files
+		- Writing files to disk from Ruby
+- Homework: Lorem Ipsum generator in HTML
+
+### Ruby: Blocks, Enumerable, Erb & Files - Tuesday, June 21, 2016
+
+- Homework review
+- Methods
+	- `def...end`
+	- arguments
+	- default arguments
+	- named arguments
+- Challenge: FizzBuzz
+- Collections of things
+	- Arrays
+		- ordering, accessing
+	- Hashes
+		- ordering, accessing
+- Working with collections
+	- `each`
+	- Blocks
+	- `select`
+	- `reject`
+	- `collect/map`
+	- `inject/reduce`
+- Homework: HTML reports from collections of things
+
+### Ruby: Objects - Wednesday, June 22, 2016
+
+- Homework review
+- Objects
+	- Everything is an object
+	- Message passing (`send`)
+	- Defining your own objects
+	- Instance methods
+	- Instance variables
+	- `attr_reader/attr_writer`
+	- `attr_accessor`
+	- `initialize`
+	- Inheritance
+- Homework: Like a Robot
+
+### Ruby: Moar Objects - Thursday, June 23, 2016
+
+- Homework review
+- Class methods
+	- Why not to use class or global variables
+- Monkey patching
+- Duck typing
+- CSVs
+	- Think of them as arrays of hashes
+- Lab: Planet Express Reporting
