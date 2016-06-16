@@ -1,0 +1,180 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+/* Header styles */
+
+header {
+  width: 100%;
+  background-color: #F7F7F7;
+  position: fixed;
+  top: 0;
+  margin-bottom: 20px;
+  height: 85px;
+}
+
+nav {
+  width: 960px;
+  border-top: 4px solid #f00;
+  margin: 0px auto;
+  height: 81px;
+  position: relative;
+}
+
+nav h1 {
+  float: left;
+  width: 150px;
+  height: 81px;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 13px 0px 0px 40px;
+}
+
+nav ul {
+  display: inline-block;
+  width: 410px;
+  height: 81px;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  height: 100%;
+  padding: 0px 10px;
+}
+
+nav form {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+nav li a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding-top: 28px;
+}
+
+nav li:hover {
+  background-color: #f00;
+}
+
+nav li:hover a {
+  color: #fff;
+}
+
+.active a {
+  color: #f00;
+}
+
+#search input[type="image"] {
+  height: 20px;
+}
+
+#search {
+  padding-right: 40px;
+}
+
+/* Main Styles */
+
+main {
+  width: 880px;
+  margin: 120px auto 50px auto;
+  padding: 0px 40px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+#photo-grid {
+  width: 100%;
+  display: flex;
+}
+
+#photo-grid img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+.left-flex {
+  flex: 2;
+  padding: 5px 10px 5px 5px;
+}
+
+.right-flex {
+  flex: 1;
+  padding: 5px;
+}
+
+.lower-left {
+  width: 100%;
+  display: flex;
+  padding-right: 10px;
+}
+
+.left-img {
+  flex: 1;
+  padding-right: 15px;
+}
+
+.right-img {
+  flex: 2;
+}
+
+/* Footer Styles */
+
+footer {
+  width: 880px;
+  margin: 0px auto;
+  padding: 0px 40px 0px 40px 0px;
+}
+
+.left-float {
+  width: 220px;
+  float: left;
+}
+
+.right-float {
+  width: 645px;
+  float: left;
+  padding-left: 15px;
+}
+
+.left-float h4 {
+  color: red;
+}
+
+.right-float p {
+  columns: 3;
+}
+
+@media (max-width: 960px) {
+
+  nav {
+    width: 100%;
+  }
+
+  #photo-grid {
+    display: block;
+  }
+
+  #photo-grid div {
+    display: block;
+  }
+
+  main {
+    width: 100%;
+  }
+
+}
