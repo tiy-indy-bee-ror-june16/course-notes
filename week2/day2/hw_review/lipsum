@@ -3,17 +3,21 @@
 require 'erb'
 require 'shellwords'
 
-lipsum_wanted = ARGV[0]
+lipsum_wanted = ARGV[0].to_s.downcase
 number = ARGV[1] || 1
 number = number.to_i
 
+lipsums = {
+  "standard" => "srghehr erth rt hr6trdhj rtdy hyt (standard)",
+  "samuel"   => "srghehr erth rt hr6trdhj rtdy hyt (samuel)",
+  "whatever" => "srghehr erth rt hr6trdhj rtdy hyt (whatever)",
+  "unknown"  => "Please pick standard or samuel"
+}
 
-if lipsum_wanted == "standard"
-  paragraph = "srghehr erth rt hr6trdhj rtdy hyt (standard)"
-elsif lipsum_wanted == "samuel"
-  paragraph = "srghehr erth rt hr6trdhj rtdy hyt (samuel)"
+if lipsums[lipsum_wanted] && lipsum_wanted != "unknown"
+  paragraph = lipsums[lipsum_wanted]
 else
-  puts "Please pick standard or samuel"
+  puts lipsums["unknown"]
   exit
 end
 
