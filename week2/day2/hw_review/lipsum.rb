@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'erb'
-require 'shellwords'
 
 lipsum_wanted = ARGV[0]
 number = ARGV[1] || 1
@@ -17,10 +16,9 @@ else
   exit
 end
 
-this = "echo #{Shellwords.escape(paragraph)} | pbcopy"
+this = "echo #{paragraph} | pbcopy"
 puts this
 system(this)
-
 new_file = File.open("./#{lipsum_wanted}.html", "w+")
 new_file << ERB.new(File.read("index.html.erb")).result(binding)
 new_file.close
