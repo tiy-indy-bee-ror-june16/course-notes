@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+
+require 'erb'
+require 'shellwords'
+
+lipsum_wanted = ARGV[0].to_s.downcase
+number = ARGV[1] || 1
+number = number.to_i
+
+lipsums = {
+  "standard" => "srghehr erth rt hr6trdhj rtdy hyt (standard)",
+  "samuel"   => "srghehr erth rt hr6trdhj rtdy hyt (samuel)",
+  "whatever" => "srghehr erth rt hr6trdhj rtdy hyt (whatever)",
+  "unknown"  => "Please pick standard or samuel"
+}
+
+if lipsums[lipsum_wanted] && lipsum_wanted != "unknown"
+  paragraph = lipsums[lipsum_wanted]
+else
+  puts lipsums["unknown"]
+  exit
+end
+
+this = "echo #{Shellwords.escape(paragraph)} | pbcopy"
+puts this
+system(this)
+
+new_file = File.open("./#{lipsum_wanted}.html", "w+")
+new_file << ERB.new(File.read("index.html.erb")).result(binding)
+new_file.close
