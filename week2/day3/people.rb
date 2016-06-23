@@ -26,6 +26,10 @@ class Person
     "Lord Admiral #{@name}"
   end
 
+  def canadian_height
+    self.height = 12
+  end
+
   def speak(phrase)
     system("say #{phrase.split(//).shuffle.join}")
   end
