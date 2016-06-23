@@ -1,0 +1,24 @@
+<html>
+  <head></head>
+  <body>
+    <ul>
+      <% our_class.each do |student| %>
+        <li><%= student %></li>
+      <% end %>
+    </ul>
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Budget</th>
+        <th>Starring</th>
+      </tr>
+      <% movies.each do |film| %>
+        <tr>
+          <td id="<%= film[:title].downcase %>"><%= film[:title] %></td>
+          <td><%= film[:budget] %></td>
+          <td><%= film[:stars] %></td>
+         </tr>
+       <% end %>
+    </table>
+  </body>
+</html>
