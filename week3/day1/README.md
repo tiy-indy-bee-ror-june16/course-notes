@@ -1,3 +1,3 @@
-# The Iron Yard Indianapolis - June 2016
+# Git Review
 
-More details on this README.md file coming soon...
+This is a quick git review
