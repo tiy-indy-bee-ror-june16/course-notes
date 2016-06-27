@@ -1,3 +1,1 @@
-# Git Review
-
-This is a quick git review
+>>>>>>> parent of ad529fe... Update README.md
