@@ -61,7 +61,7 @@ data = CSV.foreach('./planet_express_data.csv', headers: true).map do |x|
   Delivery.new(x)
 end
 
-puts "We earned $#{Delivery.total_revenue(data)} this week"
+puts "We earned $#{Delivery.total_revenue(data)} this week, dude"
 
 Delivery.pilots_records(data).each do |pilot, deliveries|
   puts "#{pilot} made #{deliveries.length} deliveries and earned $#{Delivery.sum_of(deliveries, "bonus")}"
