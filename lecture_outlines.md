@@ -109,10 +109,91 @@
 ### Ruby: Moar Objects - Thursday, June 23, 2016
 
 - Homework review
+- `method_missing`
+- `super`
+- splat args
 - Class methods
-	- Why not to use class or global variables
+	- Singleton methods
 - Monkey patching
-- Duck typing
 - CSVs
 	- Think of them as arrays of hashes
 - Lab: Planet Express Reporting
+
+## Week Three
+
+### Advanced Git - Monday, June 27, 2016
+
+- Homework Review
+	- Show & Tell
+- Break: 10:15
+- Advanced Git (note: combined classes in BEE room)
+	- `git revert`
+	- `git branch`
+	- `git checkout -b <branch_name>`
+	- `git pull`
+	- `git merge`
+		- Merge conflicts?
+	- `git log`
+	- `git log --graph --full-history --all --pretty=format:"%h%x09%d%x20%s"`
+	- `git diff`
+	- `git blame`
+- Git Workflow (and contributing to open source)
+	- Fork
+	- Branch
+	- Work
+	- Push
+	- Pull request
+	- merge
+	- Pull
+- Homework: Git Up
+
+### Intro to Automated Testing - Tuesday, June 28, 2016
+
+- Why we test
+- Test-driven development
+	- Change to the way we code
+- MiniTest
+- Challenge: FizzBuzz with tests
+- rubocop
+	- Ruby _style_
+- Homework: Coffee Time
+
+### User input, recursion, mixins and games - Wednesday, June 29, 2016
+
+- Homework review
+- Duck typing
+	- If it looks like a duck, walks like a duck and quacks like a duck, it's probably a duck
+- Recursion
+	- recursion
+	- recursion
+- Loops
+	- `while`
+	- `until`
+- `gets`
+- `require` and `require_relative`
+	- Working with multiple files
+- Homework: War
+
+### Mixins & SOLID - Thursday, June 30, 2016
+
+- Homework review
+- Modules
+	- What's the difference between a class and a module?
+- `include` vs. `extend`
+- SOLID
+	- S – Single-responsiblity principle
+		- A class does one thing only
+	- O – Open-closed principle
+		- A class should be open to extension but not to modification
+	- L – Liskov substitution principle
+		- Subclasses should be substitutable
+	- I – Interface segregation principle
+		- You should require other classes to implement things they do not need
+	- D – Dependency Inversion Principle
+		- Don't depend directly on low-level, hardcoded interfaces, rely on abstractions instead
+- Getting close to SOLID without much thought
+	- Make your classes and methods small
+		- This is easier to test anyway
+	- Lean on readability over cleverness
+	- Output is a different function than data preparation
+- Lab: Blackjack
