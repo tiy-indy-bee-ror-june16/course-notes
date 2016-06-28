@@ -34,4 +34,8 @@ class Delivery
     self.class.deliveries << self
   end
 
+  def bonus
+    money * 0.1
+  end
+
 end

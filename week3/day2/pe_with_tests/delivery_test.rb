@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'delivery'
+require './delivery'
 
 class DeliveryTest < MiniTest::Test
 
@@ -46,6 +46,11 @@ class DeliveryTest < MiniTest::Test
     Delivery.new({"Destination" => "Saturn"})
     assert Delivery.deliveries_by("Fry").length == 1
     assert Delivery.deliveries_by("Amy").length == 2
+  end
+
+  def test_bonus
+    delivery = Delivery.new({"Money" => "5555"})
+    assert_equal 555.5, delivery.bonus
   end
 
 
