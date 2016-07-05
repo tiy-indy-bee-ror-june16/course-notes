@@ -197,3 +197,58 @@
 	- Lean on readability over cleverness
 	- Output is a different function than data preparation
 - Lab: Blackjack
+
+## Week Four
+
+### Welcome to the web and rails new - Tuesday, July 5, 2016
+
+- Show & Tell
+	- Prebaked fancy-pants blackjack
+- How the web works
+	- The web request cycle
+	- DNS
+	- Headers
+	- Status codes
+	- URLs
+	- Request types
+- Rails
+	- `gem install rails -v 4.2.6`
+	- MVC - model, view, controller
+	- Routing
+		- Mapping urls to controller actions
+	- Controllers
+		- render
+		- redirect
+- Homework: First Rails
+
+### Link_to and the asset pipeline - Wednesday, July 6, 2016
+
+- Homework review
+- link_to
+	- How it relates to routes
+- params
+- Templates
+- Assumptions
+- The asset pipeline
+	- Images
+	- css
+	- javascript
+- Homework: Bootstrapping the asset pipeline
+
+### Moar views & bundler - Thursday, July 7, 2016
+
+- Homework review
+- partials
+- layouts
+- Bundler
+	- rubygems
+	- Gemfile
+	- `bootstrap-sass`
+- Homework: Surf-n-Paddle on Rails
+
+### Moar controllers - Friday, July 8, 2016
+
+- controller filters
+- flash messages
+- Sinatra overview
+- Guest lecture at 1: Dave Strus on Consulting/Freelancing
