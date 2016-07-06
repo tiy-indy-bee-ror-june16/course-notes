@@ -1,0 +1,13 @@
+<h1><%= @title %></h1>
+<h6><%= params.inspect %></h6>
+
+<%= image_tag "drwho", class: 'img-rounded' %>
+
+<ol>
+  <% @lipsums.each do |lipsum_wanted| %>
+    <li><%= link_to "#{lipsum_wanted.titleize} Lipsum",
+      lipsum_path(this_type: lipsum_wanted),
+      class: 'btn btn-large btn-primary'
+      %></li>
+  <% end %>
+</ol>
