@@ -1,0 +1,6 @@
+<h1><%= params[:this_type].titleize %></h1>
+<% (params[:num] || 1).to_i.times do %>
+  <p><%= @this_lipsum %></p>
+<% end %>
+
+<%= link_to "Home", root_path %>
