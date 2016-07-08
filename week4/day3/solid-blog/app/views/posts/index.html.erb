@@ -1,0 +1,10 @@
+<% @posts.each do |post| %>
+
+  <%= render partial: 'post_header', locals: { post: post } %>
+
+  <%= simple_format truncate(post.body, length: 500) %>
+  <p><%= link_to "[Read More]", post_path(id: post.id) %></p>
+  <div class="hline"></div>
+
+  <div class="spacing"></div>
+<% end %>

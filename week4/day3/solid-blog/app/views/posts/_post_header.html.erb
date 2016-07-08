@@ -1,0 +1,5 @@
+<p><%= image_tag post.image, class: "img-responsive" %>
+<%= link_to post_path(id: post.id) do %>
+  <h3 class="ctitle"><%= post.title %></h3>
+<% end %>
+<p><csmall>Posted: <%= post.created_at.strftime("%A %B %e, %Y at %I:%M") %><%= post.created_at.strftime("%p").downcase %>.</csmall> | <csmall2>By: <%= post.author %></csmall2></p>
