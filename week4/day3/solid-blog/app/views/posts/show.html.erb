@@ -1,0 +1,11 @@
+<%= render partial: 'post_header', locals: { post: @post } %>
+
+<%= simple_format @post.body %>
+<div class="spacing"></div>
+<h6>SHARE:</h6>
+<p class="share">
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="#"><i class="fa fa-tumblr"></i></a>
+  <a href="#"><i class="fa fa-google-plus"></i></a>
+</p>
