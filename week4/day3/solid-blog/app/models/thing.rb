@@ -32,5 +32,9 @@ class Thing
     end
   end
 
+  def self.sorted
+    all.sort_by{|thing| thing.created_at}
+  end
+
 
 end
