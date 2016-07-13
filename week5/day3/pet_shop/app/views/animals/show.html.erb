@@ -1,0 +1,8 @@
+<h1><%= @breed ? @breed.name : @animal.name %></h1>
+<%= simple_format @animal.description %>
+
+<strong>Temperment:</strong> <%= @animal.temperment %>
+<strong>Available for adoption?</strong> <%= @animal.adopted? ? "No" : "Yes" %>
+
+<%= link_to "Edit #{@animal.name}", edit_animal_path(@animal) %>
+<%= button_to "Destroy #{@animal.name}", animal_path(@animal), method: :delete, data: {confirm: "Are you sure?"} %>
