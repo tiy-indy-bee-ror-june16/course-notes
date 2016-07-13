@@ -1,0 +1,13 @@
+<h1><%= @breed ? @breed.name : "Animals" %></h1>
+
+<%= link_to "Add an animal", new_animal_path %>
+
+<ul>
+  <% @animals.each do |this_animal| %>
+    <% if this_animal.breed %>
+      <li><%= link_to this_animal.name, breed_animal_path(breed_id: this_animal.breed_id, id: this_animal.id) %></li>
+    <% else %>
+      <li><%= link_to this_animal.name, this_animal %></li>
+    <% end %>
+  <% end %>
+</ul>
