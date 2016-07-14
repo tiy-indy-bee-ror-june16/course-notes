@@ -4,5 +4,11 @@
 <strong>Temperment:</strong> <%= @animal.temperment %>
 <strong>Available for adoption?</strong> <%= @animal.adopted? ? "No" : "Yes" %>
 
-<%= link_to "Edit #{@animal.name}", edit_animal_path(@animal) %>
-<%= button_to "Destroy #{@animal.name}", animal_path(@animal), method: :delete, data: {confirm: "Are you sure?"} %>
+<%= link_to "Edit #{@animal.name}", edit_animal_path(@animal), class: "btn btn-primary" %>
+
+<%= button_to animal_path(@animal), method: :delete, data: {confirm: "Are you sure?"} do %>
+  <span class="fa fa-pencil"></span>
+  Destroy <%= @animal.name %>
+<% end %>
+
+<%= button_to "Back to home", root_path, method: :get, class: "btn btn-primary" %>

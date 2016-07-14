@@ -1,0 +1,4 @@
+<h4><%= series.name %></h4>
+<%= simple_format series.description %>
+<p><strong>Publisher:</strong> <%= series.publisher.name %></p>
+<%= link_to "Edit this series", edit_series_path(series), class: "btn btn-danger" %>

@@ -1,0 +1,8 @@
+<%= simple_form_for series do |f| %>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.input :year_start %>
+  <%= f.input :year_end %>
+  <%= f.association :publisher %>
+  <%= f.button :submit %>
+<% end %>
