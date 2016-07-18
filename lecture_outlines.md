@@ -252,3 +252,55 @@
 - flash messages
 - Sinatra overview
 - Guest lecture at 1: Dave Strus on Consulting/Freelancing
+
+## Week Five
+
+### Databases & SQL - Monday, July 11, 2016
+
+- Parts of a SQL query:
+	- `SELECT` (what)
+	- `FROM` (where)
+	- `WHERE` (filter)
+	- `JOINS` 
+		- Several different types, but essentially, joins allow you to combine queries across multiple tables
+	- `ORDER BY`
+	- `LIMIT`
+	- `OFFSET`
+	- `GROUP BY`
+
+### Intro to Active Record - Tuesday, July 12, 2016
+
+- ActiveRecord is a Ruby wrapper that interacts with a SQL database
+- It persists your Ruby object to the db and can pull them back out
+- It also has methods that wrap SQL
+	- `find(:id)` - finds a record by its id
+	- `where(...)` - generates a where query
+	- `order(...)` - generates a order
+- Security - SQL injection. Never trust user input. Don't string interpolate into a SQL query
+- Testing
+- `has_many`/`belongs_to`
+
+### RESTful Resources - Wednesday, July 13, 2016
+
+- Most web applications are CRUD apps
+	- Create
+	- Read
+	- Update
+	- Delete
+- `rails g resource <Model>`
+	- generates the model, the migration, the controller and a special route
+- `resources :publishers` - bundle for _eight_ routes
+
+```
+publishers GET    /publishers(.:format)          publishers#index
+               POST   /publishers(.:format)          publishers#create
+ new_publisher GET    /publishers/new(.:format)      publishers#new
+edit_publisher GET    /publishers/:id/edit(.:format) publishers#edit
+     publisher GET    /publishers/:id(.:format)      publishers#show
+               PATCH  /publishers/:id(.:format)      publishers#update
+               PUT    /publishers/:id(.:format)      publishers#update
+               DELETE /publishers/:id(.:format)      publishers#destroy
+```
+
+### Rubygems, Postgresql and Heroku - Thursday, July 14, 2016
+
