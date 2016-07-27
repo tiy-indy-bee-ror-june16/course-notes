@@ -50,12 +50,9 @@ robots = ["Bender", "Calculon", "Hal", "Robbie"].map(function(name){
 console.log(robots)
 
 function smart(number){
- if(number > 20)
- {
+ if(number > 20) {
    return "smart"
- }
-  else
- {
+ } else {
    return "dumb as a box of rocks"
  }
 }
